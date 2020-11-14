@@ -41,7 +41,7 @@ public class FareRuleGtfsExporter extends AbstractGtfsExporter<FareRule> {
 		BUFFER.append(SEPARATOR);
 		BUFFER.append(toExport.getContains() != null ? toExport.getContains().getZoneId() : Constants.EMPTY);
 		BUFFER.append(LINE_SEPARATOR);
-		outStream.write(BUFFER.toString().getBytes());
+		outStream.write(BUFFER.toString().getBytes("UTF-8"));
 	}
 
 	Class<FareRule> getSupportedClass() {

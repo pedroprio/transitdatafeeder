@@ -42,8 +42,10 @@ public class FareGtfsExporter extends AbstractGtfsExporter<Fare> {
 		BUFFER.append(toExport.getTransferLimit() != null ? toExport.getTransferLimit().getTransferLimitId() : Constants.EMPTY);
 		BUFFER.append(SEPARATOR);
 		BUFFER.append(toExport.getTransferDuration() != null ? toExport.getTransferDuration() : Constants.EMPTY);
+		BUFFER.append(SEPARATOR);
+		BUFFER.append(toExport.getAgency().getAgencyId());
 		BUFFER.append(LINE_SEPARATOR);
-		outStream.write(BUFFER.toString().getBytes());
+		outStream.write(BUFFER.toString().getBytes("UTF-8"));
 	}
 
 	Class<Fare> getSupportedClass() {

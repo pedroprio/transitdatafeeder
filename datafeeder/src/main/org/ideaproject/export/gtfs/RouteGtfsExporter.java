@@ -51,7 +51,7 @@ public class RouteGtfsExporter extends AbstractGtfsExporter<Route> {
 		BUFFER.append(SEPARATOR);
 		BUFFER.append(stripLeadingHashmark(toExport.getRouteTextColor()));
 		BUFFER.append(LINE_SEPARATOR);
-		outStream.write(BUFFER.toString().getBytes());
+		outStream.write(BUFFER.toString().getBytes("UTF-8"));
 	}
 
 	final Class<Route> getSupportedClass() {

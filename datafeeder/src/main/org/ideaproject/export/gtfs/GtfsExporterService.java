@@ -51,7 +51,7 @@ public class GtfsExporterService extends AbstractExporterService {
 	private static final String AGENCY_HEADER = "agency_id,agency_name,agency_url,agency_timezone,agency_lang,agency_phone\n";
 	private static final String CALENDAR_HEADER = "service_id,monday,tuesday,wednesday,thursday,friday,saturday,sunday,start_date,end_date\n";
 	private static final String CALENDAR_DATE_HEADER = "service_id,date,exception_type\n";
-	private static final String FARE_HEADER = "fare_id,price,currency_type,payment_method,transfers,transfer_duration\n";
+	private static final String FARE_HEADER = "fare_id,price,currency_type,payment_method,transfers,transfer_duration,agency_id\n";
 	private static final String FARE_RULE_HEADER = "fare_id,route_id,origin_id,destination_id,contains_id\n";
 	private static final String STOP_HEADER = "stop_id,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,location_type,parent_station\n";
 	private static final String ROUTE_HEADER = "agency_id,route_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color\n";

@@ -74,7 +74,7 @@ public class StopTimeGtfsExporter extends AbstractTripCalendarGtfsExporter<StopT
 //		buffer.append(SEPARATOR);
 //		buffer.append(toExport.getShapeDistTraveled() != null ? toExport.getShapeDistTraveled() : "");
 //		buffer.append(LINE_SEPARATOR);
-//		outStream.write(buffer.toString().getBytes());
+//		outStream.write(buffer.toString().getBytes("UTF-8"));
 	}
 
 	final Class<StopTime> getSupportedClass() {

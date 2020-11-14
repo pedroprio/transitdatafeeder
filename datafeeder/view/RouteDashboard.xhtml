@@ -215,7 +215,7 @@
 					</ui:include>
 				</f:facet>
 				<h:outputText value="#{_trip.lastStopTime}">
-					<s:convertDateTime type="time"/>
+					<s:convertDateTime type="time" pattern="HH:mm"/>
 				</h:outputText>
 			</h:column>
 			<h:column headerClass="searchResultsTableHeader">

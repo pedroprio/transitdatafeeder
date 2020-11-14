@@ -49,7 +49,7 @@ public class AgencyGtfsExporter extends AbstractGtfsExporter<Agency> {
 //		buffer.append(SEPARATOR);
 //		buffer.append(stringifyInput(toExport.getAgencyFareUrl()));
 		BUFFER.append(LINE_SEPARATOR);
-		outStream.write(BUFFER.toString().getBytes());
+		outStream.write(BUFFER.toString().getBytes("UTF-8"));
 	}
 
 	final Class<Agency> getSupportedClass() {

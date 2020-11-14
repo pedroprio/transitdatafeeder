@@ -61,7 +61,7 @@ public class CalendarGtfsExporter extends AbstractServiceGtfsExporter<Calendar> 
 		BUFFER.append(SEPARATOR);
 		BUFFER.append(formatDateValue(serviceCalendar.endDate));
 		BUFFER.append(LINE_SEPARATOR);
-		outStream.write(BUFFER.toString().getBytes());
+		outStream.write(BUFFER.toString().getBytes("UTF-8"));
 	}
 
 	Class<Calendar> getSupportedClass() {

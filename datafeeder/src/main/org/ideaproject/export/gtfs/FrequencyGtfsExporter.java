@@ -45,7 +45,7 @@ public class FrequencyGtfsExporter extends
 		BUFFER.append(SEPARATOR);
 		BUFFER.append(toExport.getHeadwaySecs());
 		BUFFER.append(LINE_SEPARATOR);
-		outStream.write(BUFFER.toString().getBytes());
+		outStream.write(BUFFER.toString().getBytes("UTF-8"));
 	}
 
 	Class<Frequency> getSupportedClass() {

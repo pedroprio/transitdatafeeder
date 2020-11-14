@@ -86,7 +86,7 @@ public class CalendarDateGtfsExporter extends
 			BUFFER.append(SEPARATOR);
 			BUFFER.append(Constants.CALENDAR_EXCEPTION_TYPE_REMOVAL);
 			BUFFER.append(LINE_SEPARATOR);
-			outStream.write(BUFFER.toString().getBytes());
+			outStream.write(BUFFER.toString().getBytes("UTF-8"));
 		}
 	}
 

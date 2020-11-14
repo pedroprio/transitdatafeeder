@@ -54,7 +54,7 @@ public class StopGtfsExporter extends AbstractGtfsExporter<Stop> {
 		BUFFER.append(SEPARATOR);
 		BUFFER.append(toExport.getParentStation() != null ? toExport.getParentStation().getStopId() : Constants.EMPTY);
 		BUFFER.append(LINE_SEPARATOR);
-		outStream.write(BUFFER.toString().getBytes());
+		outStream.write(BUFFER.toString().getBytes("UTF-8"));
 	}
 
 	final Class<Stop> getSupportedClass() {

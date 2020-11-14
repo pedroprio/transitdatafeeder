@@ -25,7 +25,7 @@
 	<property name="instrumented.dir" value="${test.dir}/instrumented" />
 	<property name="bootstrap.dir" value="${basedir}/bootstrap" />
 	<property name="jboss.domain" value="default" />
-	<property name="deploy.dir" value="${jboss.home}/server/${jboss.domain}/deploy" />
+	<property name="deploy.dir" value="${jboss.home}/server/default/deploy" />
 	<property name="war.deploy.dir" value="${deploy.dir}/${project.name}.war" />
 	<property name="packaged.archive" value="${dist.dir}/${project.name}.war" />
 	<property name="testng.jar" value="${basedir}/lib/testng.jar" />

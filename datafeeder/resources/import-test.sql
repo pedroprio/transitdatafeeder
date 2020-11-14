@@ -4,7 +4,7 @@
 --CREATE FUNCTION date_part (part varchar(16), t timestamp) RETURNS INT RETURN extract(part from t);
 
 -- SQL statements which are executed at application startup if hibernate.hbm2ddl.auto is 'create' or 'create-drop'
-insert into dfuser(user_id, email, pass, first_name, last_name, registration_date, enabled) values (111, 'admin', 'Ss/jICpf9c9GeJj8WKqx1hUClEE=', 'Admin', 'User', CURDATE(), true);
+insert into dfuser(user_id, email, pass, first_name, last_name, registration_date, enabled) values (111, 'admin', 'Ss/jICpf9c9GeJj8WKqx1hUClEE=', 'Admin', 'User', current_timestamp, true);
 insert into user_role (role_id, role_name, conditional) values (1111, 'admin', false);
 insert into user_role (role_id, role_name, conditional) values (2222, 'member', false);
 insert into user_role (role_id, role_name, conditional) values (3333, 'guest', true);

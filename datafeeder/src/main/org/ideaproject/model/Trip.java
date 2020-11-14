@@ -76,6 +76,9 @@ public class Trip extends AbstractLastModifiedEntity implements java.io.Serializ
 	@Column(name = "start_time_carryover")
 	private boolean startTimeCarryover;
 
+	@Column(name = "shape_id")
+	private int shape;	
+	
 	@ManyToOne
 	@JoinColumn(name = "trip_bikes_allowed", nullable = false)
 	private BikeOption bikeOption;
@@ -135,7 +138,7 @@ public class Trip extends AbstractLastModifiedEntity implements java.io.Serializ
 
 	public Trip(int tripId, Agency agency, Route route, Calendar calendar,
 			String tripHeadsign, Block block, Direction direction,
-			Trip basedOn, Date tripStartTime, BikeOption bikeOption) {
+			Trip basedOn, Date tripStartTime, BikeOption bikeOption, int shape) {
 		this.tripId = tripId;
 		this.agency = agency;
 		this.route = route;
@@ -146,6 +149,7 @@ public class Trip extends AbstractLastModifiedEntity implements java.io.Serializ
 		this.basedOn = basedOn;
 		this.tripStartTime = tripStartTime;
 		this.bikeOption = bikeOption;
+		this.shape = shape;
 	}
 
 	public int getTripId() {
@@ -194,6 +198,10 @@ public class Trip extends AbstractLastModifiedEntity implements java.io.Serializ
 
 	public void setBlock(Block block) {
 		this.block = block;
+	}
+
+	public int getShape() {
+		return this.shape;
 	}
 
 	public Direction getDirection() {

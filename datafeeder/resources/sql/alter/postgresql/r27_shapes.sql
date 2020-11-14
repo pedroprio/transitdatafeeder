@@ -2,7 +2,7 @@ ALTER TABLE shape ADD COLUMN date_last_modified timestamp without time zone;
 
 ALTER TABLE shape ADD COLUMN user_last_modified integer;
 
-ALTER TABLE shape ADD FOREIGN KEY(user_last_modified) REFERENCES user(user_id);
+ALTER TABLE shape ADD FOREIGN KEY(user_last_modified) REFERENCES "user"(user_id);
 
 -- --------------------------------------------------------
 --
@@ -23,7 +23,7 @@ ALTER TABLE shape_point ADD COLUMN date_last_modified timestamp without time zon
 
 ALTER TABLE shape_point ADD COLUMN user_last_modified integer;
 
-ALTER TABLE shape_point ADD FOREIGN KEY(user_last_modified) REFERENCES user(user_id);
+ALTER TABLE shape_point ADD FOREIGN KEY(user_last_modified) REFERENCES "user"(user_id);
 
 CREATE TABLE shape_segment_trip_map (
   shape_segment_id integer NOT NULL,

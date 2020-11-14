@@ -54,7 +54,7 @@ public class StationGtfsExporter extends AbstractGtfsExporter<Station> {
 		BUFFER.append(SEPARATOR);
 		BUFFER.append(Constants.EMPTY);
 		BUFFER.append(LINE_SEPARATOR);
-		outStream.write(BUFFER.toString().getBytes());
+		outStream.write(BUFFER.toString().getBytes("UTF-8"));
 	}
 
 	final Class<Station> getSupportedClass() {

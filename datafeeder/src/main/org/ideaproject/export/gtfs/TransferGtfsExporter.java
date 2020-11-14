@@ -37,7 +37,7 @@ public class TransferGtfsExporter extends AbstractGtfsExporter<Transfer> {
 		buffer.append(SEPARATOR);
 		buffer.append(toExport.getMinTransferTime() != null ? toExport.getMinTransferTime() : Constants.EMPTY);
 		buffer.append(LINE_SEPARATOR);
-		outStream.write(buffer.toString().getBytes());
+		outStream.write(buffer.toString().getBytes("UTF-8"));
 	}
 
 	final Class<Transfer> getSupportedClass() {

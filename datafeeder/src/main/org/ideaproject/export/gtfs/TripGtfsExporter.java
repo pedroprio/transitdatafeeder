@@ -60,11 +60,11 @@ public class TripGtfsExporter extends AbstractTripCalendarGtfsExporter<Trip> {
 		BUFFER.append(SEPARATOR);
 		BUFFER.append(toExport.getBlock() != null ? toExport.getBlock().getBlockId() : Constants.EMPTY);
 		BUFFER.append(SEPARATOR);
-		BUFFER.append(Constants.EMPTY);
+		BUFFER.append(toExport.getShape());
 //		BUFFER.append(SEPARATOR);
 //		BUFFER.append(toExport.getBikeOption().getBikeOptionId());
 		BUFFER.append(LINE_SEPARATOR);
-		outStream.write(BUFFER.toString().getBytes());
+		outStream.write(BUFFER.toString().getBytes("UTF-8"));
 	}
 
 	@Override
