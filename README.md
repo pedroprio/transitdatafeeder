@@ -1,5 +1,5 @@
 # TransitDataFeeder
-The TransitDataFeeder open source project is an effort to develop and maintain an application that provides a web-based interface for creating and maintaining transit geospatial, schedule, calendar, and fare information in the General Transit Feed Specification.
+The TransitDataFeeder open source project is an effort to develop and maintain an application that provides a web-based interface for creating and maintaining transit geospatial, schedule, calendar, and fare information in the [General Transit Feed Specification](https://developers.google.com/transit/gtfs).
 
 ![The Open Plans Guide to GTFS Data](open-plans-gtfs-guide.png?raw=true "Title")
 
